@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'Client.dart';
 import 'package:flutter_animation_progress_bar/flutter_animation_progress_bar.dart';
+import 'package:wave_progress_widget/wave_progress.dart';
+import 'package:flutter_icons/flutter_icons.dart';
+import 'package:marquee/marquee.dart';
+import 'dart:async';
 
 class TestApp extends StatefulWidget {
   @override
@@ -16,18 +20,29 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   DatabaseReference _dRef =
       FirebaseDatabase.instance.reference().child('RandomVal2');
+
   bool _signIn;
+  String heatIndexText;
+  Timer _timer;
+
   @override
   void initState() {
     super.initState();
     _tabController = TabController(length: 2, vsync: this);
     _signIn = false;
+    heatIndexText = 'Show heat index soon';
+    _timer = Timer.periodic(Duration(seconds: 10), (timer) {
+      if (_signIn) {
+        setState(() {});
+      }
+    });
   }
 
   @override
   void dispose() {
     // TODO: implement dispose
     _tabController.dispose();
+    _timer.cancel();
     super.dispose();
   }
 
@@ -49,10 +64,10 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
           },
           tabs: [
             Tab(
-              icon: Icon(Icons.ac_unit),
+              icon: Icon(MaterialCommunityIcons.temperature_fahrenheit),
             ),
             Tab(
-              icon: Icon(Icons.accessibility_new),
+              icon: Icon(MaterialCommunityIcons.water_percent),
             )
           ],
         ),
@@ -105,7 +120,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
               changeColorValue: 100,
               changeProgressColor: Colors.red,
               maxValue: 150,
-              displayText: 'F',
+              displayText: '°F',
               borderRadius: 16,
               animatedDuration: Duration(milliseconds: 500),
             ),
@@ -114,7 +129,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
         Container(
           padding: const EdgeInsets.only(bottom: 40),
           child: Text(
-            '${_dht.temp.round().toStringAsFixed(2)} F',
+            '${_dht.temp.toStringAsFixed(2)} °F',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
           ),
         )
@@ -124,8 +139,34 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
 
   Widget _humidityLayout(Client _dht) {
     return Center(
-      child: Text('Humidity'),
-    );
+        child: Column(
+      children: [
+        Container(
+          padding: const EdgeInsets.only(top: 40),
+          child: Text(
+            'HUMIDITY',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+          ),
+        ),
+        Expanded(
+          child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 20),
+              child: WaveProgress(
+                  300.0, Colors.green, Colors.lightGreenAccent, _dht.humidity)),
+        ),
+        Container(
+          padding: const EdgeInsets.only(bottom: 40),
+          child: Text(
+            '${_dht.humidity.toStringAsFixed(2)} %',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
+          ),
+        )
+      ],
+    ));
+  }
+
+  _setMarqueeText(Client _dht) {
+    heatIndexText = "Heat Index : ${_dht.heartrate.toStringAsFixed(2)} °F";
   }
 
   Widget signInScaffold() {

@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       home: TestApp(),
       theme: ThemeData(
           primaryColor: Colors.amber, primarySwatch: Colors.deepOrange),
+      darkTheme: ThemeData.dark(),
     );
   }
 }
