@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
 class DataSearch extends SearchDelegate<String> {
+  final cities = ['kolaba', 'mathara', 'nuwara', 'kurunagala', 'jaffna'];
+
+  final sugcities = [
+    'kolaba',
+    'mathara',
+  ];
+
   @override
   List<Widget> buildActions(BuildContext context) {
     return [IconButton(icon: Icon(Icons.clear), onPressed: () {})];
@@ -25,6 +32,13 @@ class DataSearch extends SearchDelegate<String> {
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    // show when someont seatches for something
+    final suggList = query.isEmpty ? sugcities : cities;
+    return ListView.builder(
+      itemBuilder: (context, index) => ListTile(
+        leading: Icon(Icons.location_city),
+        title: Text(suggList[index]),
+      ),
+      itemCount: suggList.length,
+    );
   }
 }
