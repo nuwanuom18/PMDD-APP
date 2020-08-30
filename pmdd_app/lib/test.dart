@@ -30,15 +30,26 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
   ScrollController controller = ScrollController();
   CategoriesScroller categoriesScroller;
   int users;
+  List clients;
   List filtered_clients;
+  int l1 = 0;
+  int l2 = 0;
 
-  Future<int> loadData() async {
+  Future loadData() async {
     int _users = (await FirebaseDatabase.instance
             .reference()
             .child("users/count")
             .once())
         .value;
-    return _users;
+
+    List _clients = [];
+    print(_users.toString() + 'gfghfgh');
+    for (int i = 1; i <= _users; i++) {
+      _clients.add(Client.formJson(
+          (await FirebaseDatabase.instance.reference().child("users").once())
+              .value[i.toString()]));
+    }
+    return [_users, _clients];
   }
 
   @override
@@ -55,8 +66,9 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
 
     loadData().then((value) {
       setState(() {
-        categoriesScroller = CategoriesScroller(users: value);
-        users = value;
+        categoriesScroller = CategoriesScroller(users: value[0]);
+        users = value[0];
+        clients = value[1];
       });
     });
     print(users);
@@ -122,7 +134,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
                 list[i - 1] =
                     Client.formJson(snapshot.data.snapshot.value[i.toString()]);
               }
-              filtered_clients = list;
+              filtered_clients = list + [];
               var _dht = Client.formJson(snapshot.data.snapshot.value['1']);
               print(
                   'Client: ${_dht.temp} / ${_dht.heartrate} / ${_dht.humidity}');
@@ -393,6 +405,8 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
   }
 
   Widget _humidityLayout(List list) {
+    print(clients.length.toString() + 'jjjj');
+
     return Column(
       children: <Widget>[
         TextField(
@@ -400,27 +414,35 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
               contentPadding: EdgeInsets.all(10.0),
               hintText: 'Enter device id'),
           onChanged: (string) {
-            this.setState(() {
-              for (int i = 0; i < filtered_clients.length; i++) {
-                if (!filtered_clients[i]
-                    .name
-                    .round()
-                    .toString()
-                    .contains(string)) {
-                  filtered_clients.remove(filtered_clients[i]);
+            print('dd' + string + 'gg');
+
+            if (l2 > string.length) {
+              clients = filtered_clients + [];
+            }
+            setState(() {
+              for (int i = 0; i < clients.length; i++) {
+                if (!clients[i].name.round().toString().contains(string) &&
+                    string != null &&
+                    string != '') {
+                  clients.remove(clients[i]);
                 }
-                print(string);
-                print(filtered_clients[i].name.round().toString());
               }
             });
             print(filtered_clients);
+            l2 = string.length;
           },
         ),
         Expanded(
           child: ListView.builder(
             padding: EdgeInsets.all(10.0),
-            itemCount: users,
+            itemCount: clients.length,
             itemBuilder: (BuildContext context, int index) {
+              Client x;
+              for (int i = 0; i < filtered_clients.length; i++) {
+                if (clients[index].name == filtered_clients[i].name) {
+                  x = filtered_clients[i];
+                }
+              }
               return Card(
                   child: Padding(
                 padding: EdgeInsets.all(10.0),
@@ -429,14 +451,16 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      filtered_clients[index].name.round().toString(),
+                      // filtered_clients[clients.indexOf(clients[index])]
+                      x.name.round().toString(),
                       style: TextStyle(fontSize: 16.0, color: Colors.black),
                     ),
                     SizedBox(
                       height: 5.0,
                     ),
                     Text(
-                      filtered_clients[index].temp.toString(),
+                      // filtered_clients[clients.indexOf(clients[index])]
+                      x.temp.toString(),
                       style: TextStyle(fontSize: 14.0, color: Colors.black),
                     ),
                   ],
