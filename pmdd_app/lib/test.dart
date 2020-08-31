@@ -8,6 +8,7 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'package:marquee/marquee.dart';
 import 'dart:async';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'viewData.dart';
 
 class TestApp extends StatefulWidget {
   @override
@@ -110,10 +111,12 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
           },
           tabs: [
             Tab(
-              icon: Icon(MaterialCommunityIcons.temperature_fahrenheit),
+              icon: Icon(
+                MaterialCommunityIcons.book_open,
+              ),
             ),
             Tab(
-              icon: Icon(MaterialCommunityIcons.water_percent),
+              icon: Icon(MaterialCommunityIcons.search_web),
             )
           ],
         ),
@@ -128,6 +131,8 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
                   "snapshot data : ${snapshot.data.snapshot.value.toString()}");
               // users = snapshot.data.snapshot.value['count'];
               print(users);
+
+              users = snapshot.data.snapshot.value.length - 1;
               var list = new List(users);
               for (int i = 1; i <= users; i++) {
                 print('$i');
@@ -157,7 +162,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
     final double categoryHeight = size.height * 0.30;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.white,
+        //backgroundColor: Colors.white,
         body: Container(
           height: size.height,
           child: Column(
@@ -209,7 +214,8 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
                                         list[index].name.toInt().toString(),
                                     style: const TextStyle(
                                         fontSize: 28,
-                                        fontWeight: FontWeight.bold),
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.black),
                                   ),
                                   Container(
                                     child: Row(
@@ -309,9 +315,9 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
                                               size: 20,
                                               currentValue:
                                                   list[index].humidity.round(),
-                                              changeColorValue: 50,
+                                              changeColorValue: 75,
                                               changeProgressColor: Colors.red,
-                                              maxValue: 80,
+                                              maxValue: 100,
                                               displayText: '%',
                                               borderRadius: 16,
                                               animatedDuration:
@@ -450,17 +456,60 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(
-                      // filtered_clients[clients.indexOf(clients[index])]
-                      x.name.round().toString(),
-                      style: TextStyle(fontSize: 16.0, color: Colors.black),
+                    Row(
+                      children: [
+                        Text(
+                          // filtered_clients[clients.indexOf(clients[index])]
+                          'Device ID : ' + x.name.round().toString(),
+                          style: TextStyle(fontSize: 16.0, color: Colors.black),
+                        ),
+                        SizedBox(
+                          width: 50,
+                        ),
+                        RaisedButton(
+                          color: Colors.red,
+                          textColor: Colors.white,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                              side: BorderSide(color: Colors.red)),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ViewData(
+                                        client: x,
+                                      )),
+                            );
+                          },
+                          child: Text(
+                            "view data",
+                            style: TextStyle(fontSize: 14),
+                          ),
+                        ),
+                      ],
                     ),
                     SizedBox(
-                      height: 5.0,
+                      height: 20.0,
                     ),
                     Text(
                       // filtered_clients[clients.indexOf(clients[index])]
-                      x.temp.toString(),
+                      'Temperature : ' + x.temp.toString(),
+                      style: TextStyle(fontSize: 14.0, color: Colors.black),
+                    ),
+                    SizedBox(
+                      height: 20.0,
+                    ),
+                    Text(
+                      // filtered_clients[clients.indexOf(clients[index])]
+                      'Heart rate : ' + x.heartrate.toString(),
+                      style: TextStyle(fontSize: 14.0, color: Colors.black),
+                    ),
+                    SizedBox(
+                      height: 20.0,
+                    ),
+                    Text(
+                      // filtered_clients[clients.indexOf(clients[index])]
+                      'Humidity : ' + x.humidity.toString(),
                       style: TextStyle(fontSize: 14.0, color: Colors.black),
                     ),
                   ],
