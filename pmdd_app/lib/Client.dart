@@ -2,8 +2,8 @@ class Client {
   final double temp;
   final double humidity;
   final double heartrate;
-
-  Client({this.temp, this.heartrate, this.humidity});
+  final double name;
+  Client({this.temp, this.heartrate, this.humidity, this.name});
 
   factory Client.formJson(Map<dynamic, dynamic> json) {
     double parser(dynamic source) {
@@ -17,6 +17,7 @@ class Client {
     return Client(
         temp: parser(json['temp']),
         humidity: parser(json['humidity']),
+        name: parser(json['name']),
         heartrate: parser(json['heartrate']));
   }
 }
