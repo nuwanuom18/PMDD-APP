@@ -29,12 +29,13 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
   bool closeTopContainer = false;
   double topContainer = 0;
   ScrollController controller = ScrollController();
-  CategoriesScroller categoriesScroller;
+  _CategoriesScroller categoriesScroller;
   int users;
   List clients;
   List filtered_clients;
   int l1 = 0;
   int l2 = 0;
+  static String sortby;
 
   Future loadData() async {
     int _users = (await FirebaseDatabase.instance
@@ -67,7 +68,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
 
     loadData().then((value) {
       setState(() {
-        categoriesScroller = CategoriesScroller(users: value[0]);
+        categoriesScroller = _CategoriesScroller(users: value[0]);
         users = value[0];
         clients = value[1];
       });
@@ -143,6 +144,29 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
               var _dht = Client.formJson(snapshot.data.snapshot.value['1']);
               print(
                   'Client: ${_dht.temp} / ${_dht.heartrate} / ${_dht.humidity}');
+
+              var l = {};
+              var _values = [];
+              if (sortby != null) {
+                for (int i = 0; i < list.length; i++) {
+                  if (sortby == 'temperature') {
+                    l[list[i].temp] = list[i];
+                    _values.add(list[i].temp);
+                  } else if (sortby == 'heartrate') {
+                    l[list[i].heartrate] = list[i];
+                    _values.add(list[i].heartrate);
+                  } else if (sortby == 'humidity') {
+                    l[list[i].humidity] = list[i];
+                    _values.add(list[i].humidity);
+                  }
+                }
+
+                _values.sort();
+                _values = _values.reversed.toList();
+                for (int i = 0; i < _values.length; i++) {
+                  list[i] = l[_values[i]];
+                }
+              }
               return IndexedStack(
                 index: tabIndex,
                 children: [_temperatureLayout(list), _humidityLayout(list)],
@@ -571,9 +595,40 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
   }
 }
 
-class CategoriesScroller extends StatelessWidget {
+class _CategoriesScroller extends StatefulWidget {
   final int users;
-  CategoriesScroller({Key key, @required this.users}) : super(key: key);
+  _CategoriesScroller({Key key, @required this.users}) : super(key: key);
+  @override
+  CategoriesScroller createState() => CategoriesScroller();
+}
+
+class CategoriesScroller extends State<_CategoriesScroller>
+    with SingleTickerProviderStateMixin {
+  int colored;
+  bool changeButtonColor(int num) {
+    print(colored);
+    print(num);
+    print('//////////////////////////////////');
+    if (colored == null) {
+      colored = num;
+      return true;
+    } else {
+      if (colored == num) {
+        return false;
+      } else {
+        colored = num;
+        return true;
+      }
+    }
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    colored = -1;
+  }
+
   @override
   Widget build(BuildContext context) {
     print('scroll bar');
@@ -612,7 +667,7 @@ class CategoriesScroller extends StatelessWidget {
                         height: 10,
                       ),
                       Text(
-                        users.toString(),
+                        widget.users.toString(),
                         //getmessages(),
                         style: TextStyle(fontSize: 16, color: Colors.white),
                       ),
@@ -623,7 +678,7 @@ class CategoriesScroller extends StatelessWidget {
               Container(
                 width: 150,
                 margin: EdgeInsets.only(right: 20),
-                height: categoryHeight,
+                height: categoryHeight + 40,
                 decoration: BoxDecoration(
                     color: Colors.blue.shade400,
                     borderRadius: BorderRadius.all(Radius.circular(20.0))),
@@ -634,18 +689,65 @@ class CategoriesScroller extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          "Temperature\nSafe Area",
+                          "Sort by",
                           style: TextStyle(
-                              fontSize: 25,
+                              fontSize: 20,
                               color: Colors.white,
                               fontWeight: FontWeight.bold),
                         ),
                         SizedBox(
-                          height: 10,
+                          height: 5,
                         ),
-                        Text(
-                          "50-70",
-                          style: TextStyle(fontSize: 16, color: Colors.white),
+                        RaisedButton(
+                          color: colored != 0 ? Colors.red : Colors.red[900],
+                          textColor: Colors.white,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                              side: BorderSide(color: Colors.red)),
+                          onPressed: () {
+                            _TestAppState.sortby = "temperature";
+                            changeButtonColor(0);
+                            setState(() {});
+                          },
+                          child: Text(
+                            "temperature",
+                            style: TextStyle(fontSize: 14),
+                          ),
+                        ),
+                        RaisedButton(
+                          color: colored != 1 ? Colors.red : Colors.red[900],
+                          textColor: Colors.white,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                              side: BorderSide(color: Colors.red)),
+                          onPressed: () {
+                            _TestAppState.sortby = "heartrate";
+                            colored = 1;
+                            setState(() {});
+                          },
+                          child: Text(
+                            "heartrate",
+                            style: TextStyle(fontSize: 14),
+                          ),
+                        ),
+                        RaisedButton(
+                          color: colored != 2 ? Colors.red : Colors.red[900],
+                          textColor: Colors.white,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                              side: BorderSide(color: Colors.red)),
+                          onPressed: () {
+                            _TestAppState.sortby = "humidity";
+                            colored = 2;
+                            setState(() {});
+                          },
+                          child: Text(
+                            "humidity",
+                            style: TextStyle(fontSize: 14),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
                         ),
                       ],
                     ),
