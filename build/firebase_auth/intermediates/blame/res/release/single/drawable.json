@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\2fd120cf3914717770a6ae02cf1e7da4\\core-1.1.0\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_light_focused.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\ea0d7ff4156fcbc57611a961b34f2556\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\ea0d7ff4156fcbc57611a961b34f2556\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\2fd120cf3914717770a6ae02cf1e7da4\\core-1.1.0\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\ea0d7ff4156fcbc57611a961b34f2556\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\ea0d7ff4156fcbc57611a961b34f2556\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_dark_normal.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\ea0d7ff4156fcbc57611a961b34f2556\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_light_normal.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\ea0d7ff4156fcbc57611a961b34f2556\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\ea0d7ff4156fcbc57611a961b34f2556\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_disabled.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\ea0d7ff4156fcbc57611a961b34f2556\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_light_focused.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\ea0d7ff4156fcbc57611a961b34f2556\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\2fd120cf3914717770a6ae02cf1e7da4\\core-1.1.0\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\ea0d7ff4156fcbc57611a961b34f2556\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_disabled.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\ea0d7ff4156fcbc57611a961b34f2556\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_dark_focused.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\ea0d7ff4156fcbc57611a961b34f2556\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_dark_normal.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\ea0d7ff4156fcbc57611a961b34f2556\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_light_normal.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\ea0d7ff4156fcbc57611a961b34f2556\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\2fd120cf3914717770a6ae02cf1e7da4\\core-1.1.0\\res\\drawable\\notification_bg.xml"
+    }
+]
