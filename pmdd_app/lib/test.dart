@@ -9,6 +9,8 @@ import 'package:marquee/marquee.dart';
 import 'dart:async';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'viewData.dart';
+import 'package:animated_icon_button/animated_icon_button.dart';
+import 'package:animate_icons/animate_icons.dart';
 
 class TestApp extends StatefulWidget {
   @override
@@ -30,12 +32,14 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
   double topContainer = 0;
   ScrollController controller = ScrollController();
   _CategoriesScroller categoriesScroller;
+
   int users;
   List clients;
   List filtered_clients;
   int l1 = 0;
   int l2 = 0;
   static String sortby;
+  List pinthem = [];
 
   Future loadData() async {
     int _users = (await FirebaseDatabase.instance
@@ -45,7 +49,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
         .value;
 
     List _clients = [];
-    print(_users.toString() + 'gfghfgh');
+
     for (int i = 1; i <= _users; i++) {
       _clients.add(Client.formJson(
           (await FirebaseDatabase.instance.reference().child("users").once())
@@ -73,7 +77,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
         clients = value[1];
       });
     });
-    print(users);
+
     filtered_clients = [];
     controller.addListener(() {
       double value = controller.offset / 119;
@@ -97,6 +101,36 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return _signIn ? mainScaffold() : signInScaffold();
+  }
+
+////////////////////////////////////////////////////////////pin  method /////////////////////////
+  Future pindata(name) async {
+    name = name.toInt();
+    print(name);
+    var xx =
+        (await FirebaseDatabase.instance.reference().child("users/").once())
+            .value;
+
+    for (int i = 1; i < users + 1; i++) {
+      if (xx[i.toString()]['name'] == name) {
+        print('ok' + name.toString());
+        if (xx[i.toString()]['pined'] == 'false') {
+          await FirebaseDatabase.instance
+              .reference()
+              .child("users/" + i.toString())
+              .update({
+            'pined': 'true',
+          });
+        } else {
+          await FirebaseDatabase.instance
+              .reference()
+              .child("users/" + i.toString())
+              .update({
+            'pined': 'false',
+          });
+        }
+      }
+    }
   }
 
   Widget mainScaffold() {
@@ -128,52 +162,87 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
             if (snapshot.hasData &&
                 !snapshot.hasError &&
                 snapshot.data.snapshot.value != null) {
-              print(
-                  "snapshot data : ${snapshot.data.snapshot.value.toString()}");
+              // print(
+              //   "snapshot data : ${snapshot.data.snapshot.value.toString()}");
               // users = snapshot.data.snapshot.value['count'];
-              print(users);
+              // print(users);
+              print(pinthem);
+              if (pinthem.length > 0) {
+                for (int i = 0; i < pinthem.length; i++) {
+                  pindata(pinthem[0]);
+                  pinthem.removeAt(0);
+                }
+              }
 
               users = snapshot.data.snapshot.value.length - 1;
               var list = new List(users);
               for (int i = 1; i <= users; i++) {
-                print('$i');
+                //print('$i');
                 list[i - 1] =
                     Client.formJson(snapshot.data.snapshot.value[i.toString()]);
               }
+
               filtered_clients = list + [];
               var _dht = Client.formJson(snapshot.data.snapshot.value['1']);
-              print(
-                  'Client: ${_dht.temp} / ${_dht.heartrate} / ${_dht.humidity}');
 
               var l = {};
+
               var _values = [];
               if (sortby != null) {
                 for (int i = 0; i < list.length; i++) {
                   if (sortby == 'temperature') {
-                    l[list[i].temp] = list[i];
-                    _values.add(list[i].temp);
+                    if (l.containsKey(list[i].temp)) {
+                      l[list[i].temp].add(list[i]);
+                    } else {
+                      l[list[i].temp] = [list[i]];
+                      _values.add(list[i].temp);
+                    }
                   } else if (sortby == 'heartrate') {
-                    l[list[i].heartrate] = list[i];
-                    _values.add(list[i].heartrate);
+                    if (l.containsKey(list[i].heartrate)) {
+                      l[list[i].heartrate].add(list[i]);
+                    } else {
+                      l[list[i].heartrate] = [list[i]];
+                      _values.add(list[i].heartrate);
+                    }
                   } else if (sortby == 'humidity') {
-                    l[list[i].humidity] = list[i];
-                    _values.add(list[i].humidity);
+                    if (l.containsKey(list[i].humidity)) {
+                      l[list[i].humidity].add(list[i]);
+                    } else {
+                      l[list[i].humidity] = [list[i]];
+                      _values.add(list[i].humidity);
+                    }
                   }
                 }
-
+                var lx = [];
                 _values.sort();
                 _values = _values.reversed.toList();
                 for (int i = 0; i < _values.length; i++) {
-                  list[i] = l[_values[i]];
+                  lx.addAll(l[_values[i]]);
+                }
+                list = lx + [];
+              }
+              var pinned = [];
+              int pcount = 0;
+              for (int i = 0; i < list.length; i++) {
+                if (list[i].pined == 'true') {
+                  pinned.insert(pcount, list[i]);
+                  pcount++;
+                } else {
+                  pinned.add(list[i]);
                 }
               }
+
+              list = pinned + [];
+              print(list);
+              print(list[0].name);
+              print(list[0].pined);
               return IndexedStack(
                 index: tabIndex,
                 children: [_temperatureLayout(list), _humidityLayout(list)],
               );
             } else {
-              return SpinKitSquareCircle(
-                color: Colors.red,
+              return SpinKitThreeBounce(
+                color: Colors.blue,
                 size: 50.0,
               );
             }
@@ -184,6 +253,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
   Widget _temperatureLayout(List list) {
     final Size size = MediaQuery.of(context).size;
     final double categoryHeight = size.height * 0.30;
+
     return SafeArea(
       child: Scaffold(
         //backgroundColor: Colors.white,
@@ -233,13 +303,47 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
-                                  Text(
-                                    "Device ID : " +
-                                        list[index].name.toInt().toString(),
-                                    style: const TextStyle(
-                                        fontSize: 28,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.black),
+                                  Container(
+                                    child: Row(
+                                      children: [
+                                        Text(
+                                          "Device ID : " +
+                                              list[index]
+                                                  .name
+                                                  .toInt()
+                                                  .toString() +
+                                              ' ',
+                                          style: const TextStyle(
+                                              fontSize: 28,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black),
+                                          /*
+                                              print(list[index].name);
+                                              pinthem.add(list[index].name);
+                                              */
+                                        ),
+                                        AnimateIcons(
+                                          startIcon: Icons.fiber_pin_rounded,
+                                          endIcon: Icons.fiber_pin,
+                                          size: 35.0,
+                                          onStartIconPress: () {
+                                            print(list[index].name);
+                                            pinthem.add(list[index].name);
+                                            return true;
+                                          },
+                                          onEndIconPress: () {
+                                            print(list[index].name);
+                                            pinthem.add(list[index].name);
+                                            return true;
+                                          },
+                                          duration: Duration(milliseconds: 100),
+                                          color: list[index].pined == 'false'
+                                              ? Colors.green[200]
+                                              : Colors.amber,
+                                          clockwise: false,
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                   Container(
                                     child: Row(
@@ -271,7 +375,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
                                               displayText: '°F ',
                                               borderRadius: 16,
                                               animatedDuration:
-                                                  Duration(milliseconds: 500),
+                                                  Duration(milliseconds: 100),
                                             ),
                                           ),
                                         ),
@@ -282,7 +386,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
                                     child: Row(
                                       children: [
                                         Text(
-                                          "Heart Rate : " +
+                                          "Heart rate : " +
                                               list[index].heartrate.toString(),
                                           style: const TextStyle(
                                               fontSize: 17, color: Colors.grey),
@@ -319,7 +423,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
                                     child: Row(
                                       children: [
                                         Text(
-                                          "Humidity : " +
+                                          "SpO2 value : " +
                                               list[index].humidity.toString(),
                                           style: const TextStyle(
                                               fontSize: 17, color: Colors.grey),
@@ -332,15 +436,15 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
                                             padding: const EdgeInsets.symmetric(
                                                 vertical: 20),
                                             child: FAProgressBar(
-                                              progressColor: Colors.blue,
+                                              progressColor: Colors.red,
                                               direction: Axis.horizontal,
                                               verticalDirection:
                                                   VerticalDirection.up,
                                               size: 20,
                                               currentValue:
                                                   list[index].humidity.round(),
-                                              changeColorValue: 75,
-                                              changeProgressColor: Colors.red,
+                                              changeColorValue: 95,
+                                              changeProgressColor: Colors.blue,
                                               maxValue: 100,
                                               displayText: '%',
                                               borderRadius: 16,
@@ -435,7 +539,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
   }
 
   Widget _humidityLayout(List list) {
-    print(clients.length.toString() + 'jjjj');
+    //  print(clients.length.toString() + 'jjjj');
 
     return Column(
       children: <Widget>[
@@ -444,7 +548,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
               contentPadding: EdgeInsets.all(10.0),
               hintText: 'Enter device id'),
           onChanged: (string) {
-            print('dd' + string + 'gg');
+            // print('dd' + string + 'gg');
 
             if (l2 > string.length) {
               clients = filtered_clients + [];
@@ -458,7 +562,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
                 }
               }
             });
-            print(filtered_clients);
+            // print(filtered_clients);
             l2 = string.length;
           },
         ),
@@ -533,7 +637,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
                     ),
                     Text(
                       // filtered_clients[clients.indexOf(clients[index])]
-                      'Humidity : ' + x.humidity.toString(),
+                      'SpO2 value : ' + x.humidity.toString(),
                       style: TextStyle(fontSize: 14.0, color: Colors.black),
                     ),
                   ],
@@ -585,8 +689,6 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
 
   void _signInAnonymously() async {
     final FirebaseUser user = (await _auth.signInAnonymously()).user;
-    print("User is anonymous : ${user.isAnonymous}");
-    print("user id: ${user.uid}");
     setState(() {
       if (user != null) {
         _signIn = true;
@@ -606,9 +708,6 @@ class CategoriesScroller extends State<_CategoriesScroller>
     with SingleTickerProviderStateMixin {
   int colored;
   bool changeButtonColor(int num) {
-    print(colored);
-    print(num);
-    print('//////////////////////////////////');
     if (colored == null) {
       colored = num;
       return true;
@@ -631,7 +730,7 @@ class CategoriesScroller extends State<_CategoriesScroller>
 
   @override
   Widget build(BuildContext context) {
-    print('scroll bar');
+    //print('scroll bar');
     final double categoryHeight =
         MediaQuery.of(context).size.height * 0.30 - 50;
     return SingleChildScrollView(
@@ -670,6 +769,22 @@ class CategoriesScroller extends State<_CategoriesScroller>
                         widget.users.toString(),
                         //getmessages(),
                         style: TextStyle(fontSize: 16, color: Colors.white),
+                      ),
+                      RaisedButton(
+                        color: Colors.red,
+                        textColor: Colors.white,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                            side: BorderSide(color: Colors.red)),
+                        onPressed: () {
+                          _TestAppState.sortby = null;
+                          changeButtonColor(null);
+                          setState(() {});
+                        },
+                        child: Text(
+                          "Reset",
+                          style: TextStyle(fontSize: 14),
+                        ),
                       ),
                     ],
                   ),
@@ -742,7 +857,7 @@ class CategoriesScroller extends State<_CategoriesScroller>
                             setState(() {});
                           },
                           child: Text(
-                            "humidity",
+                            "SpO2 value",
                             style: TextStyle(fontSize: 14),
                           ),
                         ),
@@ -767,9 +882,9 @@ class CategoriesScroller extends State<_CategoriesScroller>
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        "Another\nNote",
+                        "search here",
                         style: TextStyle(
-                            fontSize: 25,
+                            fontSize: 20,
                             color: Colors.white,
                             fontWeight: FontWeight.bold),
                       ),

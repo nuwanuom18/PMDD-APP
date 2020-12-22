@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
+
 import 'package:firebase_database/firebase_database.dart';
 import 'Client.dart';
 import 'package:flutter_animation_progress_bar/flutter_animation_progress_bar.dart';

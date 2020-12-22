@@ -3,7 +3,8 @@ class Client {
   final double humidity;
   final double heartrate;
   final double name;
-  Client({this.temp, this.heartrate, this.humidity, this.name});
+  String pined;
+  Client({this.temp, this.heartrate, this.humidity, this.name, this.pined});
 
   factory Client.formJson(Map<dynamic, dynamic> json) {
     double parser(dynamic source) {
@@ -15,9 +16,11 @@ class Client {
     }
 
     return Client(
-        temp: parser(json['temp']),
-        humidity: parser(json['humidity']),
-        name: parser(json['name']),
-        heartrate: parser(json['heartrate']));
+      temp: parser(json['temp']),
+      humidity: parser(json['humidity']),
+      name: parser(json['name']),
+      heartrate: parser(json['heartrate']),
+      pined: json['pined'],
+    );
   }
 }
