@@ -33,6 +33,9 @@ dependencies:
   charts_flutter: ^0.9.0
   animated_icon_button: ^0.3.0
   animate_icons: ^0.0.4
+  battery_indicator: ^0.0.5
+  percent_indicator: ^2.1.9
+  simple_animations: ^1.3.3
  
 
 

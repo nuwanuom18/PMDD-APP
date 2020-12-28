@@ -11,6 +11,10 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'viewData.dart';
 import 'package:animated_icon_button/animated_icon_button.dart';
 import 'package:animate_icons/animate_icons.dart';
+import 'package:battery_indicator/battery_indicator.dart';
+import 'package:percent_indicator/percent_indicator.dart';
+import 'Animation/FadeAnimation.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class TestApp extends StatefulWidget {
   @override
@@ -224,7 +228,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
               var pinned = [];
               int pcount = 0;
               for (int i = 0; i < list.length; i++) {
-                if (list[i].pined == 'true') {
+                if (list[i].pined == 'false') {
                   pinned.insert(pcount, list[i]);
                   pcount++;
                 } else {
@@ -314,7 +318,7 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
                                                   .toString() +
                                               ' ',
                                           style: const TextStyle(
-                                              fontSize: 28,
+                                              fontSize: 25,
                                               fontWeight: FontWeight.bold,
                                               color: Colors.black),
                                           /*
@@ -337,11 +341,32 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
                                             return true;
                                           },
                                           duration: Duration(milliseconds: 100),
-                                          color: list[index].pined == 'false'
+                                          color: list[index].pined == 'true'
                                               ? Colors.green[200]
                                               : Colors.amber,
                                           clockwise: false,
                                         ),
+                                        SizedBox(
+                                          width: 5,
+                                        ),
+                                        CircularPercentIndicator(
+                                          animation: true,
+                                          animationDuration: 1200,
+                                          radius: 35.0,
+                                          lineWidth: 5.0,
+                                          percent: list[index].battery / 100,
+                                          center: new Text(
+                                            list[index]
+                                                    .battery
+                                                    .toInt()
+                                                    .toString() +
+                                                "%",
+                                            style: new TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 12.0),
+                                          ),
+                                          progressColor: Colors.green,
+                                        )
                                       ],
                                     ),
                                   ),
@@ -655,46 +680,124 @@ class _TestAppState extends State<TestApp> with SingleTickerProviderStateMixin {
   }
 
   Widget signInScaffold() {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'PMDD FLUTTER APP',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-            ),
-            SizedBox(
-              height: 50,
-            ),
-            RaisedButton(
-              color: Colors.red,
-              textColor: Colors.white,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  side: BorderSide(color: Colors.red)),
-              onPressed: () async {
-                _signInAnonymously();
-              },
-              child: Text(
-                "sign in",
-                style: TextStyle(fontSize: 14),
-              ),
-            )
-          ],
-        ),
-      ),
-    );
+    
+    String id = "";
+    String password = "";
+    getId(String id1) {
+      id = id1;
+    }
+
+    getPassword(String pass) {
+      password = pass;
+    }
+
+    void _signInAnonymously(String id, String password) async {
+
+     try{
+    final FirebaseUser user = (await _auth.signInWithEmailAndPassword(
+    email: id,
+    password: password,
+  )).user;
+
+   if (user != null) {
+    setState(() {
+      _signIn = true;
+      
+    });
+  }else{
+    setState(() {
+      _signIn = false;
+      
+    });
+
   }
 
-  void _signInAnonymously() async {
-    final FirebaseUser user = (await _auth.signInAnonymously()).user;
-    setState(() {
-      if (user != null) {
-        _signIn = true;
-      } else {}
-    });
+  }catch(e){
+    print(e);
   }
+  
+ 
+
+    }
+    Future<bool> _onBackPressed() {
+      Navigator.pop(context);
+    }
+
+         return Scaffold(
+          body: Center(
+            child: Container(
+              color: Colors.white,
+              child: Padding(
+                padding: const EdgeInsets.all(36.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    SizedBox(
+                      height: 95,
+                      
+                    ),
+                    Text(
+                        "Welcome",
+                        style: TextStyle(
+                            fontSize: 25,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    SizedBox(height: 45.0),
+                    TextField(
+                    onChanged: (String id) {
+                                                getId(id);
+                                              },
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Email ',
+                      
+                    ),),
+                    SizedBox(height: 25.0),
+                    TextField(
+                    obscureText: true,
+                    onChanged: (String id) {
+                                                getPassword(id);
+                                              },
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Password',
+                    ),),
+                    SizedBox(
+                      height: 35.0,
+                    ),
+                    RaisedButton(
+                        color: Colors.red,
+                        textColor: Colors.white,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(5),
+                            side: BorderSide(color: Colors.red)),
+                        onPressed: () async{
+                          _signInAnonymously(id, password);
+                                return SpinKitThreeBounce(
+                                  color: Colors.blue,
+                                  size: 50.0,
+                                );
+                        },
+                        child: Text(
+                          "Login",
+                          style: TextStyle(fontSize: 20),
+                        ),
+                      ),
+                    
+                    SizedBox(
+                      height: 15.0,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        );
+  }
+
+  
 }
 
 class _CategoriesScroller extends StatefulWidget {
