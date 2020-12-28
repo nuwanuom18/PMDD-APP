@@ -1,0 +1,432 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+MERGED from [com.google.firebase:firebase-analytics:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\b975aaa8efb1849425a22b06b4aa43da\firebase-analytics-17.5.0\AndroidManifest.xml:2:1-9:12
+MERGED from [:firebase_database] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_database\intermediates\library_manifest\release\AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:15:1-38:12
+MERGED from [:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:17:1-42:12
+MERGED from [:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\16782b8ccbf3d1d5502d05c24554b88b\play-services-measurement-sdk-17.5.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\954b18db951c5e73fa89a1af98d31119\firebase-auth-interop-19.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2604bb948ef3bf609c277539a051e60a\firebase-installations-16.3.2\AndroidManifest.xml:2:1-23:12
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9db388e26af7abfac6db2e66b668b555\jetified-firebase-common-19.3.0\AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\47df405c70483cb25271180d002a9f4d\jetified-firebase-components-16.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\e3a7b83ba6529bafbd103541a4385097\play-services-measurement-impl-17.5.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\eb1ae93bc247ca05673a8763d24f4e98\play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\0abb8e20a27e7d0fd851125c36aad5cb\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\bfe6d920a96787a58f82159ec01eaeca\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-database-collection:17.0.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\cbdba7285bc9d681c1cc08ac551b62a7\firebase-database-collection-17.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\ea0d7ff4156fcbc57611a961b34f2556\play-services-base-17.1.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\1085b5ce0a4c25c165c03b487bc80d66\firebase-installations-interop-16.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\123f90c4fa528d261d29ec44df760ee9\play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\b28c2d07ba08ce6acce87edd082dd7bf\play-services-ads-identifier-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\c9b61a5592e2befbcd367a87e1d8e708\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\23a83347ea59d49e16ec8b9db071c6ee\play-services-measurement-base-17.5.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\58c2443192235f8655e1e0a88eb53684\firebase-measurement-connector-18.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\379c290ede47469b29374541c2aaf36a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\124e902a5640ac33444f7b65780977bd\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\6cd2c8dbbdc8aac217cf2e1019368ae0\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f824236bd54f958a8f3b31c1f576b6d2\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\0a6c83e247e46b16c9007ab4bf27beb1\activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\cc09e61cf94975332e0b2e8e58bffc19\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2fd120cf3914717770a6ae02cf1e7da4\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\d04e096a162227df58a4d85e31351c47\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\5c233ff6ba3d79a2514fe157eb92094f\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\fa5f423cfa4256af4ac03bb472af32ba\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\95b734fbfe9b607b7526ee22e71c0695\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9979e0c7b24eaf9cec795115d9066f8b\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\05dc06e6cef85d274c3a51bc0f9895be\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\577d8056562a129aac9044a588384539\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\75ecd09be42bd0e6a829e85ad4211380\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\17405b3695b18f027ca4e4275ff92e1b\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+	package
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:2:5-35
+		INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+		INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+		INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:8:5-46:19
+MERGED from [com.google.firebase:firebase-analytics:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\b975aaa8efb1849425a22b06b4aa43da\firebase-analytics-17.5.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\b975aaa8efb1849425a22b06b4aa43da\firebase-analytics-17.5.0\AndroidManifest.xml:7:5-20
+MERGED from [:firebase_database] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_database\intermediates\library_manifest\release\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_database] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_database\intermediates\library_manifest\release\AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:28:5-36:19
+MERGED from [:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:23:5-40:19
+MERGED from [:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\16782b8ccbf3d1d5502d05c24554b88b\play-services-measurement-sdk-17.5.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\16782b8ccbf3d1d5502d05c24554b88b\play-services-measurement-sdk-17.5.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\954b18db951c5e73fa89a1af98d31119\firebase-auth-interop-19.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\954b18db951c5e73fa89a1af98d31119\firebase-auth-interop-19.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2604bb948ef3bf609c277539a051e60a\firebase-installations-16.3.2\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2604bb948ef3bf609c277539a051e60a\firebase-installations-16.3.2\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9db388e26af7abfac6db2e66b668b555\jetified-firebase-common-19.3.0\AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9db388e26af7abfac6db2e66b668b555\jetified-firebase-common-19.3.0\AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\e3a7b83ba6529bafbd103541a4385097\play-services-measurement-impl-17.5.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\e3a7b83ba6529bafbd103541a4385097\play-services-measurement-impl-17.5.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\eb1ae93bc247ca05673a8763d24f4e98\play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\eb1ae93bc247ca05673a8763d24f4e98\play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\ea0d7ff4156fcbc57611a961b34f2556\play-services-base-17.1.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\ea0d7ff4156fcbc57611a961b34f2556\play-services-base-17.1.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\123f90c4fa528d261d29ec44df760ee9\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\123f90c4fa528d261d29ec44df760ee9\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\b28c2d07ba08ce6acce87edd082dd7bf\play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\b28c2d07ba08ce6acce87edd082dd7bf\play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\23a83347ea59d49e16ec8b9db071c6ee\play-services-measurement-base-17.5.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\23a83347ea59d49e16ec8b9db071c6ee\play-services-measurement-base-17.5.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\58c2443192235f8655e1e0a88eb53684\firebase-measurement-connector-18.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\58c2443192235f8655e1e0a88eb53684\firebase-measurement-connector-18.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\379c290ede47469b29374541c2aaf36a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\379c290ede47469b29374541c2aaf36a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2fd120cf3914717770a6ae02cf1e7da4\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2fd120cf3914717770a6ae02cf1e7da4\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9979e0c7b24eaf9cec795115d9066f8b\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9979e0c7b24eaf9cec795115d9066f8b\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2fd120cf3914717770a6ae02cf1e7da4\core-1.1.0\AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:10:9-29
+	android:icon
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:11:9-43
+	android:name
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:9:9-57
+activity#com.example.pmdd_app.MainActivity
+ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:12:9-40:20
+	android:launchMode
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:14:13-43
+	android:hardwareAccelerated
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:17:13-47
+	android:windowSoftInputMode
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:18:13-55
+	android:configChanges
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:16:13-163
+	android:theme
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:15:13-47
+	android:name
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:13:13-41
+meta-data#io.flutter.embedding.android.NormalTheme
+ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:23:13-26:17
+	android:resource
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:25:15-52
+	android:name
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:24:15-70
+meta-data#io.flutter.embedding.android.SplashScreenDrawable
+ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:32:13-35:17
+	android:resource
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:34:15-61
+	android:name
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:33:15-79
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:36:13-39:29
+action#android.intent.action.MAIN
+ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:37:17-68
+	android:name
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:37:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:38:27-74
+meta-data#flutterEmbedding
+ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:43:9-45:33
+	android:value
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:45:13-30
+	android:name
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:44:13-44
+uses-sdk
+INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-analytics:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\b975aaa8efb1849425a22b06b4aa43da\firebase-analytics-17.5.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\b975aaa8efb1849425a22b06b4aa43da\firebase-analytics-17.5.0\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_database] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_database\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_database] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_database\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:19:5-21:41
+MERGED from [:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:21:5-44
+MERGED from [:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\16782b8ccbf3d1d5502d05c24554b88b\play-services-measurement-sdk-17.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\16782b8ccbf3d1d5502d05c24554b88b\play-services-measurement-sdk-17.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\954b18db951c5e73fa89a1af98d31119\firebase-auth-interop-19.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\954b18db951c5e73fa89a1af98d31119\firebase-auth-interop-19.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2604bb948ef3bf609c277539a051e60a\firebase-installations-16.3.2\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2604bb948ef3bf609c277539a051e60a\firebase-installations-16.3.2\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9db388e26af7abfac6db2e66b668b555\jetified-firebase-common-19.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9db388e26af7abfac6db2e66b668b555\jetified-firebase-common-19.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\47df405c70483cb25271180d002a9f4d\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\47df405c70483cb25271180d002a9f4d\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\e3a7b83ba6529bafbd103541a4385097\play-services-measurement-impl-17.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\e3a7b83ba6529bafbd103541a4385097\play-services-measurement-impl-17.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\eb1ae93bc247ca05673a8763d24f4e98\play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\eb1ae93bc247ca05673a8763d24f4e98\play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\0abb8e20a27e7d0fd851125c36aad5cb\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\0abb8e20a27e7d0fd851125c36aad5cb\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\bfe6d920a96787a58f82159ec01eaeca\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\bfe6d920a96787a58f82159ec01eaeca\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:17.0.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\cbdba7285bc9d681c1cc08ac551b62a7\firebase-database-collection-17.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:17.0.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\cbdba7285bc9d681c1cc08ac551b62a7\firebase-database-collection-17.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\ea0d7ff4156fcbc57611a961b34f2556\play-services-base-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\ea0d7ff4156fcbc57611a961b34f2556\play-services-base-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\1085b5ce0a4c25c165c03b487bc80d66\firebase-installations-interop-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\1085b5ce0a4c25c165c03b487bc80d66\firebase-installations-interop-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\123f90c4fa528d261d29ec44df760ee9\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\123f90c4fa528d261d29ec44df760ee9\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\b28c2d07ba08ce6acce87edd082dd7bf\play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\b28c2d07ba08ce6acce87edd082dd7bf\play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\c9b61a5592e2befbcd367a87e1d8e708\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\c9b61a5592e2befbcd367a87e1d8e708\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\23a83347ea59d49e16ec8b9db071c6ee\play-services-measurement-base-17.5.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\23a83347ea59d49e16ec8b9db071c6ee\play-services-measurement-base-17.5.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\58c2443192235f8655e1e0a88eb53684\firebase-measurement-connector-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\58c2443192235f8655e1e0a88eb53684\firebase-measurement-connector-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\379c290ede47469b29374541c2aaf36a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\379c290ede47469b29374541c2aaf36a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\124e902a5640ac33444f7b65780977bd\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\124e902a5640ac33444f7b65780977bd\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\6cd2c8dbbdc8aac217cf2e1019368ae0\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\6cd2c8dbbdc8aac217cf2e1019368ae0\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f824236bd54f958a8f3b31c1f576b6d2\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f824236bd54f958a8f3b31c1f576b6d2\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\0a6c83e247e46b16c9007ab4bf27beb1\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\0a6c83e247e46b16c9007ab4bf27beb1\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\cc09e61cf94975332e0b2e8e58bffc19\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\cc09e61cf94975332e0b2e8e58bffc19\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2fd120cf3914717770a6ae02cf1e7da4\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2fd120cf3914717770a6ae02cf1e7da4\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\d04e096a162227df58a4d85e31351c47\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\d04e096a162227df58a4d85e31351c47\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\5c233ff6ba3d79a2514fe157eb92094f\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\5c233ff6ba3d79a2514fe157eb92094f\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\fa5f423cfa4256af4ac03bb472af32ba\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\fa5f423cfa4256af4ac03bb472af32ba\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\95b734fbfe9b607b7526ee22e71c0695\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\95b734fbfe9b607b7526ee22e71c0695\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9979e0c7b24eaf9cec795115d9066f8b\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9979e0c7b24eaf9cec795115d9066f8b\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\05dc06e6cef85d274c3a51bc0f9895be\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\05dc06e6cef85d274c3a51bc0f9895be\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\577d8056562a129aac9044a588384539\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\577d8056562a129aac9044a588384539\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\75ecd09be42bd0e6a829e85ad4211380\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\75ecd09be42bd0e6a829e85ad4211380\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\17405b3695b18f027ca4e4275ff92e1b\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\17405b3695b18f027ca4e4275ff92e1b\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [:firebase_database] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_database\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
+MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:29:9-35:19
+MERGED from [:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
+MERGED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:33:9-39:19
+MERGED from [:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2604bb948ef3bf609c277539a051e60a\firebase-installations-16.3.2\AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2604bb948ef3bf609c277539a051e60a\firebase-installations-16.3.2\AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9db388e26af7abfac6db2e66b668b555\jetified-firebase-common-19.3.0\AndroidManifest.xml:32:9-36:35
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9db388e26af7abfac6db2e66b668b555\jetified-firebase-common-19.3.0\AndroidManifest.xml:32:9-36:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:31:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9db388e26af7abfac6db2e66b668b555\jetified-firebase-common-19.3.0\AndroidManifest.xml:36:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9db388e26af7abfac6db2e66b668b555\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+	android:name
+		ADDED from [:firebase_database] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_database\intermediates\library_manifest\release\AndroidManifest.xml:8:18-89
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_database] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_database\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_database] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_database\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_database] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_database\intermediates\library_manifest\release\AndroidManifest.xml:10:17-127
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2604bb948ef3bf609c277539a051e60a\firebase-installations-16.3.2\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2604bb948ef3bf609c277539a051e60a\firebase-installations-16.3.2\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\e3a7b83ba6529bafbd103541a4385097\play-services-measurement-impl-17.5.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\e3a7b83ba6529bafbd103541a4385097\play-services-measurement-impl-17.5.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\c9b61a5592e2befbcd367a87e1d8e708\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\c9b61a5592e2befbcd367a87e1d8e708\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:25:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2604bb948ef3bf609c277539a051e60a\firebase-installations-16.3.2\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2604bb948ef3bf609c277539a051e60a\firebase-installations-16.3.2\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\e3a7b83ba6529bafbd103541a4385097\play-services-measurement-impl-17.5.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\e3a7b83ba6529bafbd103541a4385097\play-services-measurement-impl-17.5.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\c9b61a5592e2befbcd367a87e1d8e708\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\c9b61a5592e2befbcd367a87e1d8e708\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:26:22-64
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:33:17-109
+meta-data#com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:10:17-122
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:24:9-31:50
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:26:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:28:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:27:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:29:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:30:13-72
+	tools:replace
+		ADDED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:31:13-47
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:25:13-85
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:37:17-109
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:10:17-123
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\e3a7b83ba6529bafbd103541a4385097\play-services-measurement-impl-17.5.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\e3a7b83ba6529bafbd103541a4385097\play-services-measurement-impl-17.5.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\c9b61a5592e2befbcd367a87e1d8e708\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\c9b61a5592e2befbcd367a87e1d8e708\play-services-measurement-sdk-api-17.5.0\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:25:22-65
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\e3a7b83ba6529bafbd103541a4385097\play-services-measurement-impl-17.5.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\e3a7b83ba6529bafbd103541a4385097\play-services-measurement-impl-17.5.0\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:40:13-87
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:31:17-139
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2604bb948ef3bf609c277539a051e60a\firebase-installations-16.3.2\AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2604bb948ef3bf609c277539a051e60a\firebase-installations-16.3.2\AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2604bb948ef3bf609c277539a051e60a\firebase-installations-16.3.2\AndroidManifest.xml:18:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9db388e26af7abfac6db2e66b668b555\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9db388e26af7abfac6db2e66b668b555\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9db388e26af7abfac6db2e66b668b555\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9db388e26af7abfac6db2e66b668b555\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9db388e26af7abfac6db2e66b668b555\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\ea0d7ff4156fcbc57611a961b34f2556\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\ea0d7ff4156fcbc57611a961b34f2556\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\ea0d7ff4156fcbc57611a961b34f2556\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\ea0d7ff4156fcbc57611a961b34f2556\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\379c290ede47469b29374541c2aaf36a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\379c290ede47469b29374541c2aaf36a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\379c290ede47469b29374541c2aaf36a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
