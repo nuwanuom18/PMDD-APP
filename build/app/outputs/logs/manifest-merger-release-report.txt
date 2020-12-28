@@ -9,6 +9,7 @@ MERGED from [:firebase_database] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebas
 MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:15:1-38:12
 MERGED from [:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:2:1-15:12
 MERGED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:17:1-42:12
+MERGED from [:battery] F:\Flutter Apps\PMDD-APP\pmdd_app\build\battery\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
 MERGED from [:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:2:1-15:12
 MERGED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:17:1-46:12
 MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\f642a2d90426571c09d35ba6c8f74859\play-services-measurement-api-17.5.0\AndroidManifest.xml:17:1-36:12
@@ -172,6 +173,8 @@ MERGED from [:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_au
 MERGED from [:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\a330c203234e1c41c2acb7b4c1b6f08d\firebase-auth-19.3.2\AndroidManifest.xml:21:5-44
+MERGED from [:battery] F:\Flutter Apps\PMDD-APP\pmdd_app\build\battery\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:battery] F:\Flutter Apps\PMDD-APP\pmdd_app\build\battery\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-measurement:17.5.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9b3d470c9f1e602d61c9b735e5f493b3\play-services-measurement-17.5.0\AndroidManifest.xml:20:5-44

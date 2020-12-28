@@ -12,8 +12,8 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->F:\Flutter Apps\PMDD-APP\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->F:\Flutter Apps\PMDD-APP\android\app\src\debug\AndroidManifest.xml:6:22-64
+14-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\debug\AndroidManifest.xml:6:22-64
 15    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 16    <!-- <uses-sdk android:minSdkVersion="14"/> -->
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -33,30 +33,30 @@
 25         FlutterApplication and put your custom class here.
 26    -->
 27    <application
-27-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:8:5-46:19
+27-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:8:5-46:19
 28        android:name="io.flutter.app.FlutterApplication"
-28-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:9:9-57
+28-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:9:9-57
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 29-->[androidx.core:core:1.1.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\2fd120cf3914717770a6ae02cf1e7da4\core-1.1.0\AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:icon="@mipmap/ic_launcher"
-31-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:11:9-43
+31-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:11:9-43
 32        android:label="PMDD" >
-32-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:10:9-29
+32-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:10:9-29
 33        <activity
-33-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:12:9-40:20
+33-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:12:9-40:20
 34            android:name="com.example.pmdd_app.MainActivity"
-34-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:13:13-41
+34-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:13:13-41
 35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-35-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:16:13-163
+35-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:16:13-163
 36            android:hardwareAccelerated="true"
-36-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:17:13-47
+36-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:17:13-47
 37            android:launchMode="singleTop"
-37-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:14:13-43
+37-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:14:13-43
 38            android:theme="@style/LaunchTheme"
-38-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:15:13-47
+38-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:15:13-47
 39            android:windowSoftInputMode="adjustResize" >
-39-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:18:13-55
+39-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:18:13-55
 40
 41            <!--
 42                 Specifies an Android theme to apply to this Activity as soon as
@@ -65,11 +65,11 @@
 45                 to determine the Window background behind the Flutter UI.
 46            -->
 47            <meta-data
-47-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:23:13-26:17
+47-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:23:13-26:17
 48                android:name="io.flutter.embedding.android.NormalTheme"
-48-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:24:15-70
+48-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:24:15-70
 49                android:resource="@style/NormalTheme" />
-49-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:25:15-52
+49-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:25:15-52
 50            <!--
 51                 Displays an Android View that continues showing the launch screen
 52                 Drawable until Flutter paints its first frame, then this splash
@@ -78,21 +78,21 @@
 55                 Flutter's first frame.
 56            -->
 57            <meta-data
-57-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:32:13-35:17
+57-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:32:13-35:17
 58                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-58-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:33:15-79
+58-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:33:15-79
 59                android:resource="@drawable/launch_background" />
-59-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:34:15-61
+59-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:34:15-61
 60
 61            <intent-filter>
-61-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:36:13-39:29
+61-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:36:13-39:29
 62                <action android:name="android.intent.action.MAIN" />
-62-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:37:17-68
-62-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:37:25-66
+62-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:37:17-68
+62-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:37:25-66
 63
 64                <category android:name="android.intent.category.LAUNCHER" />
-64-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:38:17-76
-64-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:38:27-74
+64-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:38:17-76
+64-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:38:27-74
 65            </intent-filter>
 66        </activity>
 67        <!--
@@ -100,38 +100,38 @@
 69             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 70        -->
 71        <meta-data
-71-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:43:9-45:33
+71-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:43:9-45:33
 72            android:name="flutterEmbedding"
-72-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:44:13-44
+72-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:44:13-44
 73            android:value="2" />
-73-->F:\Flutter Apps\PMDD-APP\android\app\src\main\AndroidManifest.xml:45:13-30
+73-->F:\Flutter Apps\PMDD-APP\pmdd_app\android\app\src\main\AndroidManifest.xml:45:13-30
 74
 75        <service
-75-->[:firebase_auth] F:\Flutter Apps\PMDD-APP\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+75-->[:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 76            android:name="com.google.firebase.components.ComponentDiscoveryService"
-76-->[:firebase_auth] F:\Flutter Apps\PMDD-APP\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+76-->[:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
 77            android:directBootAware="true"
 77-->[com.google.firebase:firebase-common:19.3.0] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\9db388e26af7abfac6db2e66b668b555\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
 78            android:exported="false" >
 78-->[com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:31:13-37
 79            <meta-data
-79-->[:firebase_auth] F:\Flutter Apps\PMDD-APP\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+79-->[:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 80                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
-80-->[:firebase_auth] F:\Flutter Apps\PMDD-APP\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-122
+80-->[:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-122
 81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[:firebase_auth] F:\Flutter Apps\PMDD-APP\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+81-->[:firebase_auth] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 82            <meta-data
-82-->[:firebase_database] F:\Flutter Apps\PMDD-APP\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+82-->[:firebase_database] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 83                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
-83-->[:firebase_database] F:\Flutter Apps\PMDD-APP\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-127
+83-->[:firebase_database] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-127
 84                android:value="com.google.firebase.components.ComponentRegistrar" />
-84-->[:firebase_database] F:\Flutter Apps\PMDD-APP\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+84-->[:firebase_database] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 85            <meta-data
-85-->[:firebase_core] F:\Flutter Apps\PMDD-APP\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+85-->[:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 86                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
-86-->[:firebase_core] F:\Flutter Apps\PMDD-APP\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
+86-->[:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
 87                android:value="com.google.firebase.components.ComponentRegistrar" />
-87-->[:firebase_core] F:\Flutter Apps\PMDD-APP\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+87-->[:firebase_core] F:\Flutter Apps\PMDD-APP\pmdd_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 88            <meta-data
 88-->[com.google.firebase:firebase-database:19.3.1] C:\Users\3C HOUSE\.gradle\caches\transforms-2\files-2.1\68f1c858b20a389b4ac8fca1ae00efc4\firebase-database-19.3.1\AndroidManifest.xml:32:13-34:85
 89                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "879025785406",
+    "firebase_url": "https://tutorial1-83087.firebaseio.com",
+    "project_id": "tutorial1-83087",
+    "storage_bucket": "tutorial1-83087.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879025785406:android:71148669db2fee1c21df6f",
+        "android_client_info": {
+          "package_name": "com.example.pmdd_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "879025785406-74jap7qghjt4pck0935h31k18ucis8da.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7pxlRJh4wHGlGqajs3Gum0w7iF4i_X5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "879025785406-74jap7qghjt4pck0935h31k18ucis8da.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

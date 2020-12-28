@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Flutter Apps\\PMDD-APP\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sk\\values-sk.xml",
+            "outputFile": "F:\\Flutter Apps\\PMDD-APP\\pmdd_app\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sk\\values-sk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\3C HOUSE\\.gradle\\caches\\transforms-2\\files-2.1\\379c290ede47469b29374541c2aaf36a\\jetified-play-services-basement-17.0.0\\res\\values-sk\\values.xml",
